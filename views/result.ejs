@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title></title>
+        <LINK REL="STYLESHEET" TYPE="text/css" HREF="stylesheets/style.css"/>
+    <LINK REL="STYLESHEET" TYPE="text/css" HREF="stylesheets/book.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+        
+    </head>
+    <body> 
+        
+ <div id="resultHeader">RESULT SECTION</div>
+       <div id="timeDiv">Total Search Time: <%= time %></div>
+        <div id="instructHeader">CLICK TO ENLARGE OR GO TO SITE</div>
+        <!--h3 id="title">Dictionary</h3-->
+    <!--div class="current left page red ontop">1</div-->
+        
+    <div class="prevResults">
+        <div class="prevHeader">Previously Searched For</div>
+            <ul>
+            <% for (var i = 0; i < output.length; i++) { %>
+                <li><%= output[i] %></a><label></label></nobr></li>
+                
+                <% } %>
+        </ul>
+            </div>
+            
+    <div class="thumbResults">
+        
+        <% for (var j = 0; j < thumbArr.length; j++) { %>
+        <div  class="img" title="<%= title[j] %>"; ><a  href=<%= link[j] %> ><img width=82 height=82 src=<%= thumbArr[j] %> /></a>
+            <br><br><a href=<%= site[j] %>><label>GO TO SITE</label></a>
+        
+        </div>
+        
+        <% } %>
+        </div>
+        
+<div class="btns">
+
+    <button id="back">BACK</button>
+        
+</div>
+
+     
+           
+        <script src="javascripts/jquery.js"></script>
+        <script src="javascripts/script.js"></script>
+    </body>
+
+</html>

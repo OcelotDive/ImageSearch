@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title></title>
+    <LINK REL="STYLESHEET" TYPE="text/css" HREF="stylesheets/style.css"/>
+        <LINK REL="STYLESHEET" TYPE="text/css" HREF="stylesheets/book.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+       <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet"> 
+    </head>
+    <body> 
+       <div id="header" class="mainHeader animated bounceInDown"><span class="red">I</span><span class="orange">m</span><span class="yellow">a</span><span class="green">g</span><span class="blue">e</span>
+        <span class="indigo">S</span><span class="violet">e</span><span class="red">a</span><span class="orange">r</span><span class="yellow">c</span><span class="green">h</span></div>
+        <div class=subHeader>Abstraction Layer</div>
+        <div class=formContainer>
+        <form class="formBody animated lightSpeedIn" action="/result" method="post">
+        <label class="discLabel">Search </label>
+            <input type="text"  name="search" style="height: 60%; width:30%;" placeholder="DESCRIPTION">
+            
+            <input class="searchButton" id="sButton" type="submit" name="Submit" value="Submit">
+            &nbsp;&nbsp;&nbsp;
+            <label class="limitResults">LIMIT RESULTS TO:</label>
+            <select class="selectPicker" name="selectPicker">
+                <option value="5">5</option>
+                <option value="10" selected="selected">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                    
+            </select>
+        </form>
+        </div>
+        <div id="loader"><progress id="progBar" max="100" min="0"></progress><label>SEARCHING.....</label></div>
+        <script src="javascripts/jquery.js"></script>
+        <script src="javascripts/script.js"></script>
+    </body>
+
+</html>
